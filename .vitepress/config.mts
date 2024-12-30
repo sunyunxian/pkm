@@ -2,12 +2,14 @@ import { defineConfig, type DefaultTheme } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/pkm/',
   title: "个人知识库",
   description: "个人知识库 ",
   // default .
   srcDir: "./src",
   // default ./.vitepress/dist
   outDir: "./build",
+  ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
